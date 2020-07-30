@@ -1,18 +1,19 @@
 
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-*,
-*::before,
-*::after {
+@import "base/reset";
+@import "base/typography";
 
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+// @import "components";
 
+// @import "layout";
 
-}
-
-body {
-    font-size: 62.5%;
-    background-color: green;
-
-}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
