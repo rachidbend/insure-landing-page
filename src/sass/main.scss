@@ -5,15 +5,16 @@
 @import "base/reset";
 @import "base/typography";
 
-// @import "components";
+@import "layout/header";
+
+@import "components/button";
+@import "components/navigation";
+@import "components/icons";
+
+@import "pages/home";
 
 // @import "layout";
+// @import "components";
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
+
+
