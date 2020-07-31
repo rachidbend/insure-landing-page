@@ -7,14 +7,10 @@
     height: 60rem;
 
     .container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        @include DisplayFlex;
+        align-items: flex-start;
         padding-top: 10.5rem;
-
     }
-
-
 
     &__content {
         width: 540px;
@@ -26,8 +22,5 @@
         display: block;
         margin-bottom: 6.3rem;
     }
-
-    &__text {
-
-    }
+    &__text {}
 }

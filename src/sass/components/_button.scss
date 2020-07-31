@@ -14,12 +14,8 @@
     letter-spacing: 1px;
     transition: var(--transition-primary);
     backface-visibility: hidden;
-
     position: relative;
-    z-index: 1000;
-    
-
-
+    z-index: 1000; 
    &:hover {
     background-color: var(--color-neutral-dark-violet);
     color: var(--color-white);
@@ -29,7 +25,6 @@
         color: var(--color-neutral-light-gray);
         border-color: var(--color-neutral-light-gray);
         transition: var(--transition-primary);
-        
         &:hover {
             background-color: var(--color-neutral-light-gray);
             color: var(--color-neutral-dark-violet);
@@ -37,24 +32,11 @@
         }
     }
 
-    // &--hero {
-    //     color: var(--color-neutral-light-gray);
-    //     border-color: var(--color-neutral-light-gray);
-    //     transition: var(--transition-primary);
-
-    //     &:hover {
-    //         background-color: var(--color-neutral-light-gray);
-    //         color: var(--color-neutral-dark-violet);
-
-    //     }
-    // }
     &--how-we-work {
         margin-right: 8rem;
         color: var(--color-neutral-light-gray);
         border-color: var(--color-neutral-light-gray);
     }
-
-
 }
 
 

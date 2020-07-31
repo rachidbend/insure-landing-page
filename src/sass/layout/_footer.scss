@@ -4,11 +4,72 @@
 
 
 .footer {
-     height: 3000px;
      background-color: var(--color-neutral-light-gray);
      margin-top: 15rem;
+     position: relative;
+     
+     .container {
+          z-index: 1000;
+          position: relative;
+     }
 
+     &__head {
+          padding-top: 6rem;
+          padding-bottom: 3.3rem;
+          border-bottom: 1px solid rgba(131, 125, 135, .35) ;
+          @include DisplayFlex;
+     }
+     &__logo {
 
+     }
+     &__social {
+          @include DisplayFlex;
 
+          a {
+               &:not(:last-child) {
+                    margin-right: 1.4rem;
+               }
+          }
+     }
+     &__footer {
+          display: flex;
+          flex-flow: row nowrap;
+          
+          align-items: flex-start;
+          margin-top: 5rem;
+          padding-bottom: 6rem;
+     }
+     &__column {
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 700;
+          &:not(:last-child) {
+               margin-right: 17rem;
+          }
+          &:last-child {
+               margin-left: 3rem;
+          }
+     }
+     &__column-header {
+          color: var(--color-neutral-grayish-violet);
+          margin-bottom: 4rem;
+     }
+     &__list {
 
+     }
+     &__item {
+          &:not(:last-child) {
+               margin-bottom: 1.6rem;
+          }
+     }
+     &__link {
+          color: var(--color-neutral-dark-violet);
+          border-bottom: 1px solid transparent;
+          transition: --transition-primary;
+          &:hover {
+               color: var(--color-primary-violet);
+               border-bottom: 1px solid var(--color-primary-violet);
+          }
+     }
 }

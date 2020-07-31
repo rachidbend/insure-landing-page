@@ -2,7 +2,6 @@
 
 
 .header {
-
     background-color: var(--color-white);
     height: 4rem;
     padding-top: 2.1rem;
@@ -11,22 +10,11 @@
     z-index: 1000;
 
     .container {
-        // margin: 2.1rem auto;
+        @include DisplayFlex;
         margin: 0 auto;
-        // margin-bottom: 1.8rem;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-
-
     }
     
-
-
     .logo {
-
- 
         .logo__image {
             width: 100%;
         }
@@ -35,12 +23,6 @@
         margin-left: .3rem;
     }
 
-
-    &__nav {
-
-    }
-
-    &__btn {
-
-    }
+    &__nav {}
+    &__btn {}
 }

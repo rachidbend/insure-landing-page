@@ -4,14 +4,7 @@
 
     position: absolute;
     z-index: 100;
-
-    // img {
-    //     position: relative;
-    //     z-index: 100;
-    // }
-
     &__hero {
-
 
         &--right {
             top: -8rem;
@@ -21,12 +14,15 @@
             bottom: -33.5rem;
         }
     }
-
     &__how-we-work {
         top: 0;
         right: 0;
-        z-index: 10;
+
     }
 
+    &__footer {
+        top: 0;
+        left: 0;
+    }
 
 }
