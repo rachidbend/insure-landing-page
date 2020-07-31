@@ -20,10 +20,15 @@ body {
         font-size: 7.15rem;
     }
     &--secondary {
-        
+        font-size: 5.6rem;
+        color: var(--color-neutral-light-gray);
+        line-height: 1;
     }
     &--tertiary {
-        
+        font-size: 2.82rem;
+        transform: scaleY(.95);
+
+        letter-spacing: -0.5px;
     }
 
 
@@ -31,7 +36,16 @@ body {
         color: var(--color-neutral-light-gray);
         margin-bottom: 2.8rem;
     }
+    &--features {
+        letter-spacing: -1px;
+    }
+    &--feature {
+        margin-top: 3.7rem;
 
+    }
+    &--how-we-work  {
+        margin-left: 8rem;
+    }
 
 }
 
@@ -47,6 +61,10 @@ body {
 
     &--hero {
         margin-bottom: 3rem;
+    }
+    &--feature {
+        color: var(--color-neutral-grayish-violet);
+        margin-top: 2.2rem;
     }
 
 

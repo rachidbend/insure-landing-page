@@ -1,0 +1,30 @@
+
+
+.features {
+
+
+    .container {
+        margin-top: 30.5rem;
+    }
+
+    &__line {
+        width: 15rem;
+        height: 1px;
+        background-color: var(--color-primary-violet);
+        display: block;
+        margin-bottom: 6.6rem;
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: max-content;
+        grid-gap: 3rem;
+        margin-top: 9.6rem;
+    }
+
+    &__feature {
+
+    }
+
+}
