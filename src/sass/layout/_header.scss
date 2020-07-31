@@ -2,9 +2,18 @@
 
 
 .header {
-    .container {
-        margin: 2.1rem auto;
 
+    background-color: var(--color-white);
+    height: 4rem;
+    padding-top: 2.1rem;
+    padding-bottom: 1.9rem;
+    position: relative;
+    z-index: 1000;
+
+    .container {
+        // margin: 2.1rem auto;
+        margin: 0 auto;
+        // margin-bottom: 1.8rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -14,16 +23,16 @@
     }
     
 
+
     .logo {
 
-
-
-        .header__logo {
-
-        }
+ 
         .logo__image {
             width: 100%;
         }
+    }
+    .header__logo {
+        margin-left: .3rem;
     }
 
 

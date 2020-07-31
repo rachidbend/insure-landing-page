@@ -12,4 +12,44 @@ body {
 
 .heading {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: .9;
+
+    &--primary {
+        font-size: 7.15rem;
+    }
+    &--secondary {
+        
+    }
+    &--tertiary {
+        
+    }
+
+
+    &--hero {
+        color: var(--color-neutral-light-gray);
+        margin-bottom: 2.8rem;
+    }
+
+
 }
+
+.text {
+
+    font-size: 1.6rem;
+    color: var(--color-neutral-light-gray);
+    line-height: 1.64;
+    font-weight: 400;
+    letter-spacing: 0px;
+    opacity: .9;
+    // backface-visibility: hidden;
+
+    &--hero {
+        margin-bottom: 3rem;
+    }
+
+
+
+}
+

@@ -1,0 +1,33 @@
+
+
+.hero {
+    
+    background-color: var(--color-primary-violet);
+    position: relative;
+    height: 60rem;
+
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding-top: 10.5rem;
+
+    }
+
+
+
+    &__content {
+        width: 540px;
+    }
+    &__line {
+        width: 15rem;
+        height: 1px;
+        background-color: var(--color-neutral-light-gray);
+        display: block;
+        margin-bottom: 6.3rem;
+    }
+
+    &__text {
+
+    }
+}

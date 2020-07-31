@@ -1,0 +1,28 @@
+
+
+.background {
+
+    position: absolute;
+    z-index: 100;
+
+    // img {
+    //     position: relative;
+    //     z-index: 100;
+    // }
+
+    &__hero {
+
+
+        &--right {
+            top: -8rem;
+            right: 0;
+        }
+        &--left {
+            bottom: -33.5rem;
+        }
+    }
+
+
+
+
+}
