@@ -3,6 +3,10 @@
 .nav {
     @include DisplayFlex;
 
+    @include respond(phone) {
+        display: none;
+    }
+
     &__list{
         display: flex;
         flex-flow: row nowrap;

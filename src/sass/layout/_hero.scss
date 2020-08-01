@@ -6,14 +6,44 @@
     position: relative;
     height: 60rem;
 
+    @include respond(tab-land) {
+        height: 50rem;
+    }
+    @include respond(phone) {
+        height: fit-content;
+    }
+
     .container {
         @include DisplayFlex;
         align-items: flex-start;
         padding-top: 10.5rem;
+
+        @include respond(tab-land) {
+            padding-top: 7rem;
+        }
+        @include respond(phone) {
+            flex-flow: column-reverse nowrap;
+            padding-top: 0;
+            width: 100%;
+        }
     }
 
     &__content {
-        width: 540px;
+        width: 54rem;
+
+        @include respond(tab-land) {
+            width: 50rem;
+            padding-right: 2rem;
+        }
+        @include respond(phone) {
+            width: 84%;
+            margin: 0 auto;
+            padding-right: 0;
+            text-align: center;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+
     }
     &__line {
         width: 15rem;
@@ -21,6 +51,25 @@
         background-color: var(--color-neutral-light-gray);
         display: block;
         margin-bottom: 6.3rem;
+
+        @include respond(tab-land) {
+            margin-bottom: 5rem;
+            width: 10rem;
+        }
+        @include respond(phone) {
+            display: none;
+        }
     }
     &__text {}
+    &__image-container {
+        @include respond(phone) {
+            width: 100%;
+            position: relative;
+            z-index: 1000;
+        }
+
+        
+    }
+
+
 }

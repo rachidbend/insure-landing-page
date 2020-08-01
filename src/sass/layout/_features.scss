@@ -5,6 +5,15 @@
 
     .container {
         margin-top: 30.5rem;
+
+        @include respond(tab-land) {
+            margin-top: 15rem; 
+        }
+        @include respond(phone) {
+            margin-top: 15rem;
+            text-align: center;
+        }
+
     }
 
     &__line {
@@ -13,6 +22,17 @@
         background-color: hsl(276, 55%, 47%);
         display: block;
         margin-bottom: 6.6rem;
+
+        @include respond(tab-land) {
+            margin-bottom: 5rem;
+            width: 10rem;   
+        }
+        @include respond(phone) {
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            width: 16rem;
+        }
+        
     }
 
     &__features {
@@ -21,6 +41,16 @@
         grid-template-rows: max-content;
         grid-gap: 3rem;
         margin-top: 9.6rem;
+
+        @include respond(tab-land) {
+            grid-gap: 2.4rem;
+        }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, min-content);
+            grid-gap: 6rem;
+        }
     }
 
     &__feature {

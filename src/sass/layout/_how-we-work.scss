@@ -4,11 +4,30 @@
 .how-we-work {
     margin-top: 15.8rem;
 
+    @include respond(tab-land) {
+            margin-top: 10rem;
+    }
+    @include respond(phone) {
+     padding: 0 2rem;       
+    }
+
     .container { 
         height: 25rem;
         background-color: var(--color-primary-violet);
         position: relative;
         @include DisplayFlex;
         overflow: hidden;
+
+        @include respond(tab-land) {
+            height: 22rem;
+        }
+        @include respond(phone) {
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 32rem;
+            padding: 4rem;
+            text-align: center;
+        }
     }
 }

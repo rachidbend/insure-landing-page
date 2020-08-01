@@ -4,4 +4,19 @@
 .container {
     margin: 0 auto;
     max-width: 111rem;
+
+    @include respond(tab-land) {
+        max-width: 86rem;
+    }
+
+    @include respond(phone) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    @include respond(phone-small) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }

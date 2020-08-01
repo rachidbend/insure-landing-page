@@ -18,9 +18,17 @@
           padding-bottom: 3.3rem;
           border-bottom: 1px solid rgba(131, 125, 135, .35) ;
           @include DisplayFlex;
+          @include respond(phone) {
+               flex-flow: column nowrap;
+               justify-content: center;
+               align-items: center;
+               padding-top: 10rem;
+          }
      }
      &__logo {
-
+          @include respond(phone) {
+               margin-bottom: 2rem;
+          }
      }
      &__social {
           @include DisplayFlex;
@@ -38,6 +46,11 @@
           align-items: flex-start;
           margin-top: 5rem;
           padding-bottom: 6rem;
+          @include respond(phone) {
+            flex-flow: column nowrap;
+            align-items: center;
+            text-align: center;
+          }
      }
      &__column {
           font-size: 1.4rem;
@@ -46,14 +59,30 @@
           font-weight: 700;
           &:not(:last-child) {
                margin-right: 17rem;
+               @include respond(tab-land) {
+                    margin-right: 10rem;
+                    margin-bottom: 5rem;
+               }
+               @include respond(phone) {
+                    margin-right: 0;
+               }
           }
           &:last-child {
                margin-left: 3rem;
+
+               @include respond(tab-land) {
+                    margin-left: 2.4rem;
+               }
+               @include respond(phone) {
+                    margin-left: 0;
+               }
           }
      }
      &__column-header {
           color: var(--color-neutral-grayish-violet);
           margin-bottom: 4rem;
+
+
      }
      &__list {
 
@@ -66,7 +95,7 @@
      &__link {
           color: var(--color-neutral-dark-violet);
           border-bottom: 1px solid transparent;
-          transition: --transition-primary;
+          transition: var(--transition-primary);
           &:hover {
                color: var(--color-primary-violet);
                border-bottom: 1px solid var(--color-primary-violet);

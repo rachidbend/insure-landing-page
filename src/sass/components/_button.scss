@@ -36,6 +36,12 @@
         margin-right: 8rem;
         color: var(--color-neutral-light-gray);
         border-color: var(--color-neutral-light-gray);
+
+        @include respond(phone) {
+            margin-right: 0;
+            margin-top: 3rem;
+        }
+
     }
 }
 

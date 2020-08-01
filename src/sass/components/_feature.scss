@@ -4,7 +4,15 @@
 
 
     &__icon {
-       
+       width: 8.6rem;
+
+       @include respond(tab-land) {
+            width: 7.6rem;
+        }
+
+        @include respond(phone) {
+            width: 9rem;
+        }
     }
 
 

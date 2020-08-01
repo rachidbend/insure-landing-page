@@ -7,3 +7,27 @@
     align-items: center;
 }
 
+// * body {
+//     color: #667285;
+// }
+
+// Media Query Manager
+@mixin respond($breakPoint) {
+    @if $breakPoint == phone-small {
+        @media screen and (max-width: 375px) { @content }; // for small screens 375px
+    } 
+    @if $breakPoint == phone {
+        @media screen and (max-width: 600px) { @content }; // for phone screens 600px
+    }
+    @if $breakPoint == tab-port {
+        @media screen and (max-width: 900px) { @content }; // for tablet in portrait mode 900px
+    }
+    @if $breakPoint == tab-land {
+        @media screen and (max-width: 1200px) { @content }; // for tablet in landscape mode 900px
+    }
+    @if $breakPoint == big-desktop {
+        @media screen and (min-width: 1800px) { @content }; // for big desctop screens
+    }
+
+
+}
