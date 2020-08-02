@@ -7,7 +7,12 @@
     padding-top: 2.1rem;
     padding-bottom: 1.9rem;
     position: relative;
-    z-index: 1000;
+    z-index: 3000;
+    @include respond(phone) {
+        padding: 2rem 0;
+        position: fixed;
+        width: 100%;
+    }
 
     .container {
         @include DisplayFlex;
@@ -30,10 +35,33 @@
     &__nav {}
     &__btn {}
 
-
+    .nav__mobile {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+        }
+    }
     .nav__mobile--open {
         width: 3rem;
         height: 3rem;
-
+        display: none; 
+        // @include respond(tab-port) {
+        //     display: block;
+        // }
     }
+    .nav__mobile--close {
+        width: 3rem;
+        height: 3rem;
+        display: none; 
+        // @include respond(tab-port) {
+        //     display: block;
+        // }
+    }
+}
+
+.display {
+    @include respond(tab-port) {
+            display: block !important;
+    }
+
 }

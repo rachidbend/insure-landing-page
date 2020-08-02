@@ -3,8 +3,9 @@
 .nav {
     @include DisplayFlex;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         display: none;
+
     }
 
     &__list{
@@ -34,3 +35,58 @@
     }
 }
 
+.nav-mobile {
+    display: none;
+    position: relative;
+    // top: -100vh;
+    opacity: 0;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+
+        flex-flow: column nowrap;
+        align-items: center;
+        position: fixed;
+        top: -120vh;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2000;
+        background-color: var(--color-neutral-dark-violet);
+        margin-top: -8rem;
+        padding-top: 13rem;
+    }
+
+    &__list{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__item{
+        margin-bottom: 4rem;
+        &:not(:last-child) {
+
+        }
+    }
+    &__link{
+        color: var(--color-neutral-light-gray);
+        font-size: 2.4rem;
+        text-decoration: none;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        transition: var(--transition-primary);
+        &:hover {
+
+        }
+    }
+}
+
+.mobile-open {
+
+    display: flex;
+    top: 0;
+    opacity: 1;
+}
