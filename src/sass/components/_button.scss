@@ -16,6 +16,10 @@
     backface-visibility: hidden;
     position: relative;
     z-index: 1000; 
+
+    @include respond(tab-port) {
+        font-size: 1.3rem;
+    }
    &:hover {
     background-color: var(--color-neutral-dark-violet);
     color: var(--color-white);

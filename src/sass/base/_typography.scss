@@ -29,6 +29,9 @@ body {
         @include respond(tab-land) {
             font-size: 5.2rem;
         }
+        @include respond(tab-port) {
+            font-size: 4.6rem;
+        }
     }
     &--secondary {
         font-size: 5.6rem;
@@ -37,6 +40,9 @@ body {
 
         @include respond(tab-land) {
             font-size: 4rem;   
+        }
+        @include respond(tab-port) {
+            font-size: 3.4rem;
         }
     }
     &--tertiary {

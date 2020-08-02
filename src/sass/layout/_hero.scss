@@ -9,6 +9,10 @@
     @include respond(tab-land) {
         height: 50rem;
     }
+    @include respond(tab-port) {
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
     @include respond(phone) {
         height: fit-content;
     }

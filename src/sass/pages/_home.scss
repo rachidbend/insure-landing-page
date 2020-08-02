@@ -9,7 +9,9 @@
     @include respond(tab-land) {
         max-width: 86rem;
     }
-
+    @include respond(tab-port) {
+        width: 72rem;
+    }
     @include respond(phone) {
         width: 80%;
         margin: 0 auto;
@@ -21,3 +23,4 @@
     }
 
 }
+

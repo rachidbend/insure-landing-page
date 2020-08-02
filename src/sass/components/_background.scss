@@ -28,7 +28,7 @@
                 bottom: -14rem;
             }
             @include respond(phone) {
-                bottom: 36rem;
+                bottom: 37rem;
                 width: 20rem;
             }
         }
@@ -59,6 +59,10 @@
         left: 0;
         right: 0;
         bottom: 8rem;
+        @include respond(tab-port) {
+            bottom: 1rem;
+
+        }
     }
 
 }
