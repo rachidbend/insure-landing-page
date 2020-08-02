@@ -27,7 +27,7 @@
      }
      &__logo {
           @include respond(phone) {
-               margin-bottom: 2rem;
+               margin-bottom: 3rem;
           }
      }
      &__social {

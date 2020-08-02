@@ -17,19 +17,19 @@
             @include respond(phone) {
                 width: 14.6rem;
                 top: auto;
-                bottom: -22rem;
+                bottom: -20rem;
             }
         }
         &--left {
             bottom: -33.5rem;
 
             @include respond(tab-land) {
-                width: 12rem;
+                width: 14rem;
                 bottom: -14rem;
             }
             @include respond(phone) {
-                bottom: 35.8rem;
-                width: 16rem;
+                bottom: 36rem;
+                width: 20rem;
             }
         }
     }

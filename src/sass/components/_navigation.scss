@@ -54,7 +54,7 @@
         z-index: 2000;
         background-color: var(--color-neutral-dark-violet);
         margin-top: -8rem;
-        padding-top: 13rem;
+        padding-top: 15rem;
     }
 
     &__list{
@@ -65,7 +65,7 @@
 
     }
     &__item{
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
         &:not(:last-child) {
 
         }
@@ -79,9 +79,7 @@
         font-weight: 700;
         letter-spacing: 1.2px;
         transition: var(--transition-primary);
-        &:hover {
 
-        }
     }
 }
 

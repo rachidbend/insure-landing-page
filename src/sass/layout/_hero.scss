@@ -30,7 +30,8 @@
 
     &__content {
         width: 54rem;
-
+        position: relative;
+        z-index: 1000;
         @include respond(tab-land) {
             width: 50rem;
             padding-right: 2rem;
@@ -40,8 +41,8 @@
             margin: 0 auto;
             padding-right: 0;
             text-align: center;
-            margin-top: 10rem;
-            margin-bottom: 10rem;
+            margin-top: 12rem;
+            margin-bottom: 12rem;
         }
 
     }
